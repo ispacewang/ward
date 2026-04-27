@@ -1,0 +1,17 @@
+title: 访客申请操作手册
+baseUrl: https://example.com
+outputDir: ./manuals
+retry: 2
+steps:
+  - name: 打开首页
+    action: goto
+    url: /
+    description: 打开系统首页
+  - name: 等待标题
+    action: wait
+    selector: h1
+    description: 等待页面主标题出现
+  - name: 截图首页
+    action: screenshot
+    selector: body
+    description: 截取首页
